@@ -34,30 +34,37 @@ section p {
     justify-content: space-around;
 }
 
+.gallery div {
+    position: relative;
+    margin: 10px;
+    height: 200px;
+}
+
 .gallery img {
     height: 200px;
     aspect-ratio: 3/4;
 }
 
-.gallery img:hover {
+.gallery div p {
+    text-align: center;
+    margin: 0;
+    background-color: #00000093;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: .5s;
+}
+
+ .gallery div:hover img, .gallery div:hover {
     transform: scale(1.1);
     transition: .5s;
 }
 
-.gallery img::after {
-    content: 'Image of dead person';
-    height: 20px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    font-size: 12px;
-    padding: 5px;
-    position: absolute;
-    z-index: 9;
-    bottom: 0;
-    left: 0;
-    display: block;
+.gallery div:hover p {
+    display: none;
 }
 
 footer {
