@@ -39,17 +39,20 @@ section p {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
+    background-image: url('../images/metalchain.png') cover;
 }
 
 .gallery div {
     position: relative;
     margin: 10px;
     height: 200px;
+    transition: .5s;
 }
 
 .gallery img {
     height: 200px;
     aspect-ratio: 3/4;
+    transition: .5s;
 }
 
 .gallery div p {
@@ -67,8 +70,7 @@ section p {
 
  .gallery div:hover img, .gallery div:hover {
     transform: scale(1.1);
-    transition: .5s;
-}
+ }
 
 .gallery div:hover p {
     display: none;
@@ -101,6 +103,7 @@ footer {
 footer a {
     color: white;
     transition: .5s;
+    padding: .5rem
 }
 
 footer a:hover {
