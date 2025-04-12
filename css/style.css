@@ -4,8 +4,14 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 
+body {
+    background-color: black;
+    background: radial-gradient(circle, #434343 0%, #1d1d1d 50%, #000000 100%);
+    color: white;
+}
+
 header, footer {
-    background-color: #000000;
+   /* background-color: #000000; */
     color: white;
     padding: 10px 0;
     width: 100%;
@@ -23,8 +29,17 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
+.chain {
+    height: 50vh;
+    background-image: url('../images/metalchain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 section {
-    background-color: #f4f4f4;
+   /* background-color: #f4f4f4;
+    background-color: #343434; */
     padding: 20px;
     margin: 20px auto;
     text-align: center;
