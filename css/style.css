@@ -29,14 +29,6 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
-.chain {
-    height: 50vh;
-    background-image: url('../images/metalchain.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 section {
    /* background-color: #f4f4f4;
     background-color: #343434; */
@@ -54,7 +46,10 @@ section p {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
-    background-image: url('../images/metalchain.png') cover;
+    background-image: url('../images/metalchain.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .gallery div {
@@ -93,11 +88,16 @@ section p {
 
 .questionnaire a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 20px;
+}
+
+.questionnaire a img {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .questionnaire a:hover {
